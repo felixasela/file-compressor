@@ -1,0 +1,2 @@
+def huffman():
+    print('huffman')
