@@ -1,12 +1,12 @@
-from classes.node import test
-from classes.huffman_algorithm import huffman
-from classes.file import file_options
+from classes.huffman_algorithm import file_compressor
 
-test()
-huffman()
-
+# C:/Users/felix/OneDrive/Documentos/Personal/Documents/GitHubNotes.txt
 addres = input('Enter the file path: ')
 
-file_options = file_options(addres)
-
-file_options.read_file()
+try:
+    file_compressor = file_compressor(addres)
+    file = file_compressor.read_file()
+    file_content = file.read()
+    file_compressor.get_probabilities(file_content)
+except Exception as err:
+    print(f"Unexpected {err=}, {type(err)=}")
