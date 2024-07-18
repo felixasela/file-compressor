@@ -19,7 +19,7 @@ source venv/Scripts/activate
 
 
 ## Dependecies
-install dependencies with the next command.
+Install dependencies with the next command.
 
 ```shell
 pip install -r requirements.txt
